@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Charles-Mutebwa - Portfolio</title>
+  <!-- Google Fonts & Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">Charles Mutebwa</a>
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Parallax Background -->
+  <header id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="hero-title">Hi, I'm Mutebwa Charles </h1>
+      <p class="hero-subtitle">Creative Developer & Designer</p>
+      <a href="#contact" class="cta-button">Work With Me</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="charles.jpg" alt="Your Name" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <p>
+            Mutebwa Charles is passionate about leveraging technology for community empowerment and addressing social issues. He is a second-year Computer Science and Information Technology student at Uganda Martyrs University, where he combines his technical skills with leadership roles to make an impact.
+          </p>
+          <p>
+            Moreover, Charles is an advocate for technological innovation and has demonstrated a commitment to expanding his own technical knowledge. His Power Learn Project Scholarship from PLP Africa in January 2025 highlights his potential in technology and his continuous drive for professional development.
+
+            While he is still early in his career, his dedication to combining technology with social good sets him apart as someone who aspires to use tech solutions for large-scale societal impact.
+            
+            
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2>Portfolio</h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="ev1.jpg" alt="Project 1" loading="lazy" />
+          <div class="portfolio-info">
+            <h3>Online-Voting-System</h3>
+            <p>Electronic voting technology intends to speed the counting of ballots, reduce the cost of paying staff to count votes manually and can provide improved accessibility for disabled voters.</p>
+            <a href="https://project1.com" target="_blank" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="bus1.png" alt="Project 2" loading="lazy" />
+          <div class="portfolio-info">
+            <h3>Online-Bus-Booking-System</h3>
+            <p>A bus reservation system is a mobile or web software solution designed to provide customers with a personalized easy-to-utilize user experience for booking and purchasing tickets online. </p>
+            <a href="https://project2.com" target="_blank" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="Digital-Loan-Management-System.jpg" alt="Project 3" loading="lazy" />
+          <div class="portfolio-info">
+            <h3>Digital-Loan-Management-System</h3>
+            <p>A loan management system, or LMS for short, is a piece of software used by lenders to manage and track loans.</p>
+            <a href="https://project3.com" target="_blank" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-item">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Custom websites built with modern technologies.</p>
+        </div>
+        <div class="service-item">
+          <i class="fa-solid fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Innovative designs for seamless user experiences.</p>
+        </div>
+        <div class="service-item">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h3>Responsive Design</h3>
+          <p>Optimized for all devices and screen sizes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Me</h2>
+      </div>
+      <form id="contact-form" action="#" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CodeIsland Technologies. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://www.bing.com/ck/a?!&&p=12a8e52f303b61d903de336dd377acff0158d717d12f5b6fc04b72c53e484ed7JmltdHM9MTc0MzcyNDgwMA&ptn=3&ver=2&hsh=4&fclid=37f3aaae-cafd-60de-0dfc-bf86cb0161d5&u=a1L2ltYWdlcy9zZWFyY2g_cT1saW5rZWRpbiUyMGxpbmslMjBmb3IlMjB0aGUlMjBsb2dvJkZPUk09SVFGUkJBJmlkPUY1NDNDOEEwQ0Q1MjEwN0ZDODUyNTFENDcyNkYwNTAyMkVCMThBNzQ&ntb=1" target="_blank"><i class="fa-brands fa-linkedin">Linkedin</i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-github">Github</i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter">X</i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
